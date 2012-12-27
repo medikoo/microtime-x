@@ -1,18 +1,15 @@
 @root
 
-indent 2
-maxlen 80
+jslint_medikoo.indent 2
+jslint_medikoo.maxlen 80
 es5
 
 jslint_medikoo.tabs
 jslint_medikoo.module
 jslint_medikoo.nomen
 jslint_medikoo.plusplus
-jslint_medikoo.predef process, performance
 
 jshint.laxcomma
-jshint.camelcase
-jshint.curly
 jshint.eqeqeq
 jshint.forin
 jshint.immed
@@ -21,6 +18,7 @@ jshint.newcap
 jshint.noarg
 jshint.noempty
 jshint.nonew
+jshint.proto
 jshint.regexp
 jshint.undef
 jshint.unused
@@ -31,4 +29,6 @@ jshint.global module, require, exports
 jshint.smarttabs
 jshint.eqnull
 jshint.expr
+
+jslint_medikoo.predef process, performance
 jshint.global+ process, performance
