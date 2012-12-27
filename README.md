@@ -15,6 +15,6 @@ In your project path:
 
 You can easily bundle npm packages for browser with [modules-webmake](https://github.com/medikoo/modules-webmake)
 
-## Tests [![Build Status](https://secure.travis-ci.org/medikoo/microtime-x.png?branch=master)](https://secure.travis-ci.org/medikoo/microtime-x)
+## Tests [![Build Status](https://travis-ci.org/medikoo/microtime-x.png)](https://travis-ci.org/medikoo/microtime-x)
 
 	$ npm test
