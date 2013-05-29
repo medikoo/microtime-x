@@ -2,7 +2,7 @@
 
 Returns the number of microseconds elapsed since 1 January 1970 00:00:00 UTC
 
-In browser relies on `performance.now` or it's engine specific variant if available, in Node.js [microtime](https://npmjs.org/package/microtime) by Wade Simmons is used (if supported). If none of the mentioned is found then `Date.now`'s result multiplied by 1000 is returned
+In browser relies on `performance.now` or it's engine specific variant if available, in Node.js [microtime](https://npmjs.org/package/microtime) by Wade Simmons is used (if supported). If none of the mentioned works then `Date.now()` result multiplied by 1000 is returned
 
 ## Installation
 ### NPM
