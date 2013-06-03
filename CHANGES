@@ -1,2 +1,6 @@
+v0.1.1  --  2013.06.03
+- Update to use microtime v0.4 which brings Windows support
+- Fix node environment detection (it failed on Windows)
+
 v0.1.0  --  2012.12.27
 Initial
