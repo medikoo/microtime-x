@@ -18,7 +18,7 @@
     "microtime": "~0.5.1"
   },
   "devDependencies": {
-    "tad": "0.2.0"
+    "tad": "0.2.x"
   },
   "scripts": {
     "test": "node ./node_modules/tad/bin/tad"
