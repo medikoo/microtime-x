@@ -1,27 +1,27 @@
 {
   "name": "microtime-x",
   "version": "0.1.1",
-  "author": "Mariusz Nowak <medikoo+microtime-x@medikoo.com> (http://www.medikoo.com/)",
   "description": "Get current time in microseconds (cross-environment)",
+  "author": "Mariusz Nowak <medyl@medikoo.com> (http://www.medikoo.com/)",
   "main": "lib/microtime",
-  "scripts": {
-    "test": "node ./node_modules/tad/bin/tad lib"
-  },
   "keywords": [
     "time",
     "date",
     "microtime",
     "utc"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:medikoo/microtime-x.git"
+  },
   "optionalDependencies": {
     "microtime": "0.4.x"
   },
   "devDependencies": {
     "tad": "~0.1.16"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:medikoo/microtime-x.git"
+  "scripts": {
+    "test": "node ./node_modules/tad/bin/tad lib"
   },
   "license": "MIT"
 }
