@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "description": "Get current time in microseconds (cross-environment)",
   "author": "Mariusz Nowak <medyl@medikoo.com> (http://www.medikoo.com/)",
-  "main": "lib/microtime",
   "keywords": [
     "time",
     "date",
