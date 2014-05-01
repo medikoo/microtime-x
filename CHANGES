@@ -1,3 +1,8 @@
+v0.2.1  --  2014.05.01
+* Fix resolution of main module
+* Remove Makefile (it's environment agnostic module)
+* Improve dependencies configuration
+
 v0.2.0  --  2014.04.28
 * Move out main module out of lib folder
 * Improve microtime resolution when using 'performance' object
