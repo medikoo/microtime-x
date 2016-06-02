@@ -3,7 +3,7 @@
 var floor = Math.floor, correction = 0;
 
 module.exports = exports = (function () {
-	var name, round, base, dateNow, nodeMicrotime;
+	var name, round, base, dateNow, nodeMicrotime, envCorrection;
 
 	if ((typeof performance !== 'undefined') && performance) {
 		if (typeof performance.now === 'function') name = 'now';
@@ -20,7 +20,20 @@ module.exports = exports = (function () {
 			} else {
 				base = Date.now();
 			}
-			return function () { return round((base + performance[name]()) * 1000) + correction; };
+			// We need to periodically calculate correction, as
+			// `performance.now()` doesn't react to eventual clock corrections
+			// (as made by system).
+			// When not corrected, in corner-case scenario function may produce future timestaps
+			// which may in result be rejected by other processes (as malicious).
+			// Reevaluating that correction doesn't remove that risk completely,
+			// still minimizes it's probablity
+			envCorrection = -((base + performance[name]()) - Date.now());
+			setInterval(function () {
+				envCorrection = -((base + performance[name]()) - Date.now());
+			}, 1000);
+			return function () {
+				return round((base + performance[name]() + envCorrection) * 1000) + correction;
+			};
 		}
 	}
 
