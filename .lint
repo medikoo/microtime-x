@@ -9,4 +9,4 @@ tabs
 nomen
 plusplus
 
-predef+ process, performance
+predef+ process, performance, setInterval
